@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-MONGOURI:"mongodb+srv://Ashish:u0Vz5gqJAg132u1P@cluster0.vhlf5.mongodb.net/Cluster0?retryWrites=true&w=majority";
+const {MONGOURI} =require('./keys')
 mongoose.connect(MONGOURI);
 //mongodb+srv://Ashish:u0Vz5gqJAg132u1P@cluster0.vhlf5.mongodb.net/Cluster0?retryWrites=true&w=majority
 const db = mongoose.connection;
